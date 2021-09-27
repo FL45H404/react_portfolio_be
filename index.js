@@ -16,13 +16,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cookieParser());
-// app.use(session({
-//     key:'uid',
-//     secret: 'keyboard cat',
-//     resave: false,
-//     saveUninitialized: true,
-//     cookie: {expires:60000000 }
-//   }))
+app.use(session({
+    key:'uid',
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: true,
+    cookie: {expires:60000000 }
+  }))
 // app.use(function(req,res,next){
 //   res.header('Access-Control-Allow-Origin','*')
 //   res.header('Access-Control-Allow-Credentials',true)
