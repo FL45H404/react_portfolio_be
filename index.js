@@ -21,7 +21,7 @@ app.use(session({
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: true,
-    sameSite:'none',
+    SameSite:'None',
     cookie: {expires:60000000 }
   }))
 // app.use(function(req,res,next){

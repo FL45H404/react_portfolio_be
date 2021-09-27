@@ -48,7 +48,7 @@ exports.login = async (req, res) => {
                     SameSite: 'None'
                 })
                 console.log(data)
-                req.session.cookie='hi'
+                // req.session.cookie='hi'
                 req.session.user = token;
                 console.log("login succesfully")
                 return res.status(200).json({message:"login succesful"})
