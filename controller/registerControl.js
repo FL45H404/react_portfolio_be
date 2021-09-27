@@ -43,8 +43,7 @@ exports.login = async (req, res) => {
             if (hash) {
                 const token = jwt.sign(body.email, process.env.TOKEN_SECRET);
                 res.cookie("jwt", token, {
-                    expires: new Date(Date.now() + 3000000),
-                    httpOnly: true
+                    expires: new Date(Date.now() + 3000000)
                 })
                 console.log(data)
                 // req.session.user = data.role;
