@@ -44,7 +44,6 @@ exports.login = async (req, res) => {
                 const token = jwt.sign(body.email, process.env.TOKEN_SECRET);
                 res.cookie("jwt", token, {
                     expires: new Date(Date.now() + 3000000),
-                    httpOnly: true,
                     sameSite:'none',
                     secure:true
                 })
@@ -66,9 +65,9 @@ exports.login = async (req, res) => {
 
 exports.logout=async (req,res)=>{
     try{
-console.log('logout')
-res.clearCookie('jwt')
-return res.status(200).send('user logout')
+       console.log('logout')
+    res.clearCookie('jwt')
+    return res.status(200).send('user logout')
     }catch(err){
         return res.status(500).send(err)
     }
