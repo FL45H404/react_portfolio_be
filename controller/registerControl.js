@@ -44,8 +44,7 @@ exports.login = async (req, res) => {
                 const token = jwt.sign(body.email, process.env.TOKEN_SECRET);
                 res.cookie("jwt", token, {
                     expires: new Date(Date.now() + 3000000),
-                    httpOnly: true,
-                    SameSite: 'None'
+                    httpOnly: true
                 })
                 console.log(data)
                 // req.session.cookie='hi'

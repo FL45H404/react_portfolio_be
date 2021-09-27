@@ -17,12 +17,11 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cookieParser());
 app.use(session({
-    key:'uid',
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: true,
-    SameSite:'None',
-    cookie: {expires:60000000 }
+    cookie: { sameSite:'none',
+        secure:true}
   }))
 // app.use(function(req,res,next){
 //   res.header('Access-Control-Allow-Origin','*')
