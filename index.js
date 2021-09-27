@@ -11,7 +11,7 @@ const port=process.env.PORT || 5000;
 var session = require('express-session');
 const jwt = require('jsonwebtoken');
 // const Register = require('../model/register')
-app.use(cors({credentials:true,origin:true}))
+app.use(cors({origin:true}))
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
