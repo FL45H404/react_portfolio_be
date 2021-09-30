@@ -57,9 +57,14 @@ app.use('/',register)
 app.use('/',contact)
 
 
-app.get('/about',Auth,(req,res)=>{
-res.status(200).send('about page')
-})
+// app.get('/about',Auth,(req,res)=>{
+// res.status(200).send('about page')
+// })
+
+if(process.env.NODE_ENV=="production"){
+    app.use(express.static("fe/build"))
+}
+
 app.listen(port,()=>{
     console.log(`server running on ${port}`)
 })

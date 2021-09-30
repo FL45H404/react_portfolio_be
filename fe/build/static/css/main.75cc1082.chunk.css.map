@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/styles.css"],"names":[],"mappings":"AAAA,EACE,SAAU,CACV,QACF,CACA,KACE,sBAAuB,CACvB,iBACF,CACA,UACE,WACF","file":"main.75cc1082.chunk.css","sourcesContent":["* {\n  padding: 0;\n  margin: 0;\n}\n.App {\n  font-family: sans-serif;\n  text-align: center;\n}\n.register {\n  height: 50vh;\n}\n\n"]}
