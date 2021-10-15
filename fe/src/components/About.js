@@ -75,7 +75,8 @@ const About = () => {
 										<span className="number" data-number="120"></span>
 										<span>To more Info:-</span>
 									</p>
-									<p><a href="https://drive.google.com/file/d/1I9qmKLGVCLzmfxIq8RkckqHv30PGNMLM/preview" target="_blank" className="btn btn-primary py-3 px-3">Download CV</a></p>
+										
+									<p><a href="https://drive.google.com/file/d/1fVR3_f3oGAaHWaytYcjkpLdQH5nb5yHe/preview" target="_blank" className="btn btn-primary py-3 px-3">Download CV</a></p>
 								</div>
 							</div>
 							<div>
